@@ -1,0 +1,133 @@
+body {
+    background-color: #f0f0f0;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    /* display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "article"
+        "footer"; */
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3em 0;
+}
+
+.fa-solid {
+    color: hsla(24.75, 100%, 43.73%, .8);
+    font-size: 3rem;
+}
+
+
+nav {
+    display: none;
+}
+
+
+.title {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 1.75em;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    padding: 1em 0 1.5em 0;
+}
+
+.journal-article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    gap: 1em;
+    padding: 1em;
+    margin: 1em 3em;
+    background-color: hsla(60, 100%, 70%, .3);
+    border-radius: 1em;
+    box-shadow: 2px 2px 2px hsla(0, 0%, 20%, .5);
+}
+
+.journal-img {
+    width: 90%;
+    height: auto;
+    border-radius: 1em;
+}
+
+.journal-article-title {
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #333;
+    text-align: center;
+}
+
+.journal-article-content {
+    width: 35ch;
+    font-size: .75rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.journal-article a {
+    font-size: .75rem;
+    font-weight: 700;
+    color: hsla(24.75, 100%, 43.73%, 1);
+}
+
+.journal-article a:hover,
+.journal-article a:focus{
+    background-color: hsla(24.75, 100%, 43.73%, .8);
+    color: #fff;
+    border-radius: 1em;
+    padding: .5em 1em;
+    transition: ease-in-out .1s;
+}
+
+
+@media (min-width: 768px) {
+    .fa-solid{
+        display: none;
+    }
+
+    header {
+        background-color: hsla(24.75, 100%, 43.73%, .8);
+    } 
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+
+    }
+    
+    nav ul li{
+        margin: 0 1.5em;
+    }
+
+    nav ul li a {
+        cursor: pointer;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 900;
+        letter-spacing: .25rem;
+    }
+
+    nav ul li a:hover,
+    nav ul li a:focus {
+        background-color: hsla(8.45, 100%, 40.39%, .5);
+        border-radius: 1em;
+        padding: .5em 1em;
+        transition: ease-in-out .1s;
+        font-size: 1.25rem;
+    }
+    
+}
